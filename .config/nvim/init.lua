@@ -36,6 +36,7 @@ opt.wrap = false
 -- スペルチェッカーを有効（日本語や中国語などのアジア言語は無視する）
 opt.spell = true
 opt.spelllang = { 'en_us', 'cjk' }
+opt.spelloptions:append("camel")
 
 -- 全選択
 vim.keymap.set({ "n", "v" }, "vie", "ggVG", {
