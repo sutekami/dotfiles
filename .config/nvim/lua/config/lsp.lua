@@ -39,6 +39,7 @@ vim.lsp.enable({
   "vtsls",
   "vue_ls",
   "dartls",
+  "sourcekit",
 })
 
 -- Diagnostic 表示設定（これは今まで通り）
