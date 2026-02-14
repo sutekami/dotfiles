@@ -33,6 +33,10 @@ vim.opt.fixendofline = true
 --折り返ししない
 opt.wrap = false
 
+-- スペルチェッカーを有効（日本語や中国語などのアジア言語は無視する）
+opt.spell = true
+opt.spelllang = { 'en_us', 'cjk' }
+
 -- 全選択
 vim.keymap.set({ "n", "v" }, "vie", "ggVG", {
   noremap = true,
