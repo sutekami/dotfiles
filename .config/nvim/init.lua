@@ -33,6 +33,9 @@ vim.opt.fixendofline = true
 --折り返ししない
 opt.wrap = false
 
+-- 検索においてハイライトを無効にする
+opt.hlsearch = false
+
 -- スペルチェッカーを有効（日本語や中国語などのアジア言語は無視する）
 opt.spell = true
 opt.spelllang = { 'en_us', 'cjk' }
