@@ -45,6 +45,12 @@ vim.keymap.set({ "n", "v" }, "vie", "ggVG", {
   desc = "Select All",
 })
 
+vim.keymap.set('i', '<C-c>', '<Esc>', {
+  noremap = true,
+  silent = true,
+  desc = "Exit insert mode",
+})
+
 -- =========================
 -- 外部変更（git switch 等）を即同期させる設定
 -- =========================
