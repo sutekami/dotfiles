@@ -2,6 +2,7 @@ require("config.lazy")
 require("config.barbar")
 require("config.lsp")
 require("config.persistence-session")
+require("config.tree")
 
 local opt = vim.opt
 
