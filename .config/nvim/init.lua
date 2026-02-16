@@ -45,3 +45,29 @@ vim.keymap.set({ "n", "v" }, "vie", "ggVG", {
   desc = "Select All",
 })
 
+-- =========================
+-- 外部変更（git switch 等）を即同期させる設定
+-- =========================
+
+-- 外部で変更されたファイルを自動で読み直す
+vim.o.autoread = true
+
+-- CursorHold の発火頻度を上げて変更検知を高速化
+vim.o.updatetime = 200
+
+-- 外部変更チェック
+vim.api.nvim_create_autocmd({
+  "FocusGained",
+  "BufEnter",
+  "CursorHold",
+  "CursorHoldI",
+  "TermLeave", -- ← toggleterm から戻った瞬間
+}, {
+  pattern = "*",
+  callback = function()
+    -- special buffer を除外
+    if vim.bo.buftype == "" then
+      vim.cmd("checktime")
+    end
+  end,
+})
