@@ -22,11 +22,11 @@ launchOrFocus({ "cmd", "ctrl" }, "t", "WezTerm")
 -- Command + Control + C で Chrome を起動またはフォーカス
 launchOrFocus({ "cmd", "ctrl" }, "c", "Google Chrome")
 
--- Command + Control + C で Chrome を起動またはフォーカス
+-- Command + Control + N で Notion を起動またはフォーカス
 launchOrFocus({ "cmd", "ctrl" }, "n", "Notion")
 
--- Command + Control + C で Chrome を起動またはフォーカス
+-- Command + Control + S で Slack を起動またはフォーカス
 launchOrFocus({ "cmd", "ctrl" }, "s", "Slack")
 
--- Command + Control + C で Chrome を起動またはフォーカス
-launchOrFocus({ "cmd", "ctrl" }, "v", "Visual Studio Code")
+-- Command + Control + E で Visual Studio Code を起動またはフォーカス
+launchOrFocus({ "cmd", "ctrl" }, "e", "Visual Studio Code")
