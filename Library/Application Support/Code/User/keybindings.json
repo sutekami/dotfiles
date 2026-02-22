@@ -40,7 +40,7 @@
     "when": "chatInputHasText && chatSessionOptionsValid && inChatInput && !chatHasToolConfirmation && !chatSessionRequestInProgress && !withinEditSessionDiff"
   },
   {
-    "key": "ctrl+shift+down",
+    "key": "ctrl+shift+n",
     "command": "multiDiffEditor.goToNextChange",
     "when": "activeEditor == 'multiDiffEditor'"
   },
@@ -50,7 +50,7 @@
     "when": "activeEditor == 'multiDiffEditor'"
   },
   {
-    "key": "ctrl+shift+down",
+    "key": "ctrl+shift+n",
     "command": "workbench.action.compareEditor.nextChange",
     "when": "textCompareEditorVisible"
   },
@@ -58,5 +58,15 @@
     "key": "alt+f5",
     "command": "-workbench.action.compareEditor.nextChange",
     "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
+  },
+  {
+    "key": "alt+f5",
+    "command": "-workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
   }
 ]
