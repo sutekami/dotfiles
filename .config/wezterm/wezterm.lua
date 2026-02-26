@@ -53,6 +53,16 @@ config.keys = {
   },
   { key = 'n', mods = 'LEADER|CTRL', action = act.SwitchWorkspaceRelative(1) },
   { key = 'p', mods = 'LEADER|CTRL', action = act.SwitchWorkspaceRelative(-1) },
+  -- Cmd + K で完全クリア（iTerm互換）
+  {
+    key = 'k',
+    mods = 'CMD',
+    action = act.Multiple {
+      act.ClearScrollback 'ScrollbackAndViewport',
+      act.SendKey { key = 'L', mods = 'CTRL' }, -- 再描画（iTermっぽくする）
+      act.ScrollToBottom, -- 画面の一番下にスクロール
+    },
+  },
 }
 
 -- 起動時ウィンドウサイズの設定（初期設定が小さすぎる）
