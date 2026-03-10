@@ -7,3 +7,5 @@
   first-push = push -u origin @
 [core]
   editor = nvim
+[fetch]
+  prune = true
