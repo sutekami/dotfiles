@@ -30,3 +30,6 @@ launchOrFocus({ "cmd", "ctrl" }, "s", "Slack")
 
 -- Command + Control + E で Visual Studio Code を起動またはフォーカス
 launchOrFocus({ "cmd", "ctrl" }, "e", "Visual Studio Code")
+
+-- Command + Control + L で Linear を起動またはフォーカス
+launchOrFocus({ "cmd", "ctrl" }, "p", "Linear")
