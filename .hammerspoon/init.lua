@@ -23,7 +23,8 @@ launchOrFocus({ "cmd", "ctrl" }, "t", "WezTerm")
 launchOrFocus({ "cmd", "ctrl" }, "c", "Google Chrome")
 
 -- Command + Control + N で Notion を起動またはフォーカス
-launchOrFocus({ "cmd", "ctrl" }, "n", "Notion")
+-- 2026/03/28 Notion はブラウザで開くことにしたため、ショートカットを無効化
+-- launchOrFocus({ "cmd", "ctrl" }, "n", "Notion")
 
 -- Command + Control + S で Slack を起動またはフォーカス
 launchOrFocus({ "cmd", "ctrl" }, "s", "Slack")
