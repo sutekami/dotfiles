@@ -67,7 +67,7 @@ config.keys = {
 
 -- 起動時ウィンドウサイズの設定（初期設定が小さすぎる）
 config.initial_cols = 150
-config.initial_rows = 60
+config.initial_rows = 50
 
 -- 設定ファイルをいじると自動でホットリロードが走る
 config.automatically_reload_config = true
@@ -75,8 +75,11 @@ config.automatically_reload_config = true
 -- カラースキーマ設定
 config.color_scheme = 'Tokyo Night'
 
+-- フォントファミリーの変更
+config.font = wezterm.font("Hack Nerd Font")
+
 -- フォントサイズの設定
-config.font_size = 12.0
+config.font_size = 14.0
 
 -- 日本語入力設定（?）
 config.use_ime = true
