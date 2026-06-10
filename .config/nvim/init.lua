@@ -35,7 +35,7 @@ vim.opt.fixendofline = true
 opt.wrap = false
 
 -- 検索においてハイライトを無効にする
-opt.hlsearch = false
+-- opt.hlsearch = false
 
 -- スペルチェッカーを有効（日本語や中国語などのアジア言語は無視する）
 opt.spell = true
