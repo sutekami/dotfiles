@@ -76,7 +76,10 @@ config.automatically_reload_config = true
 config.color_scheme = 'Tokyo Night'
 
 -- フォントファミリーの変更
-config.font = wezterm.font("Hack Nerd Font")
+config.font = wezterm.font_with_fallback({
+  { family = "Hack Nerd Font" },
+  { family = "Hiragino Sans" }
+})
 
 -- フォントサイズの設定
 config.font_size = 14.0
