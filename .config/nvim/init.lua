@@ -24,3 +24,9 @@ vim.keymap.set({ "n", "v" }, "vie", "ggVG", {
   silent = true,
   desc = "Exit insert mode",
 })
+
+-- 末尾の空白を取り除く
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*",
+  command = [[%s/\s\+$//e]],
+})
