@@ -30,7 +30,8 @@ launchOrFocus({ "cmd", "ctrl" }, "c", "Google Chrome")
 launchOrFocus({ "cmd", "ctrl" }, "s", "Slack")
 
 -- Command + Control + E で Visual Studio Code を起動またはフォーカス
-launchOrFocus({ "cmd", "ctrl" }, "e", "Visual Studio Code")
+-- 2026/06/17 VSCode は一旦 Neovim に置き換えられたのでショートカットを無効化
+-- launchOrFocus({ "cmd", "ctrl" }, "e", "Visual Studio Code")
 
 -- Command + Control + L で Linear を起動またはフォーカス
 launchOrFocus({ "cmd", "ctrl" }, "p", "Linear")
