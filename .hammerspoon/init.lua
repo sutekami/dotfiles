@@ -1,19 +1,17 @@
 function launchOrFocus(keyBindTable, alphabetKey, appName)
-  hs.hotkey.bind(
-    keyBindTable, alphabetKey, function()
-      local app = hs.application.get(appName)
+	hs.hotkey.bind(keyBindTable, alphabetKey, function()
+		local app = hs.application.get(appName)
 
-      if not app then
-        -- 起動していなければ起動
-        hs.application.launchOrFocus(appName)
-        return
-      end
+		if not app then
+			-- 起動していなければ起動
+			hs.application.launchOrFocus(appName)
+			return
+		end
 
-      if not app:isFrontmost() then
-        app:activate(true)
-      end
-    end
-  )
+		if not app:isFrontmost() then
+			app:activate(true)
+		end
+	end)
 end
 
 -- Command + Control + T で WezTerm を起動またはフォーカス
@@ -35,3 +33,5 @@ launchOrFocus({ "cmd", "ctrl" }, "s", "Slack")
 
 -- Command + Control + L で Linear を起動またはフォーカス
 launchOrFocus({ "cmd", "ctrl" }, "p", "Linear")
+
+launchOrFocus({ "cmd", "ctrl" }, "o", "Obsidian")
