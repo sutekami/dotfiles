@@ -3,18 +3,12 @@ return {
     "folke/snacks.nvim",
     opts = {
       picker = {
-        hidden = true,
+        enabled = false,
         sources = {
-          files = {
+          explorer = {
             hidden = true,
             ignored = true,
-          },
-        },
-      },
-      explorer = {
-        win = {
-          keys = {
-            o = "confirm",
+            exclude = { "**/.git", "**/.DS_Store" },
           },
         },
       },
