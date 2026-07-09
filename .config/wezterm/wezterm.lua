@@ -14,13 +14,13 @@ config.keys = {
 	-- workspace を選択する
 	{
 		key = "s",
-		mods = "LEADER|CTRL",
+		mods = "LEADER",
 		action = act.ShowLauncherArgs({ flags = "WORKSPACES", title = "Select workspace" }),
 	},
 	-- 現在フォーカスしている workspace の名前を変更する
 	{
 		key = "r",
-		mods = "LEADER|CTRL",
+		mods = "LEADER",
 		action = act.PromptInputLine({
 			description = "(wezterm) Set workspace title: ",
 			action = wezterm.action_callback(function(win, pane, line)
@@ -33,7 +33,7 @@ config.keys = {
 	-- 名前をつけて workspace を作成する
 	{
 		key = "c",
-		mods = "LEADER|CTRL",
+		mods = "LEADER",
 		action = act.PromptInputLine({
 			description = "(wezterm) Create new workspace:",
 			action = wezterm.action_callback(function(window, pane, line)
@@ -48,8 +48,8 @@ config.keys = {
 			end),
 		}),
 	},
-	{ key = "n", mods = "LEADER|CTRL", action = act.SwitchWorkspaceRelative(1) },
-	{ key = "p", mods = "LEADER|CTRL", action = act.SwitchWorkspaceRelative(-1) },
+	-- { key = "n", mods = "LEADER", action = act.SwitchWorkspaceRelative(1) },
+	-- { key = "p", mods = "LEADER", action = act.SwitchWorkspaceRelative(-1) },
 	-- Cmd + K で完全クリア（iTerm互換）
 	{
 		key = "k",
