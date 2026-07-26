@@ -31,6 +31,10 @@ launchOrFocus({ "cmd", "ctrl" }, "s", "Slack")
 -- 2026/06/17 VSCode は一旦 Neovim に置き換えられたのでショートカットを無効化
 -- launchOrFocus({ "cmd", "ctrl" }, "e", "Visual Studio Code")
 
+-- Command + Control + E で Zed を起動またはフォーカス
+-- 2026/07/10 Zed にしてみる
+-- launchOrFocus({ "cmd", "ctrl" }, "e", "Zed")
+
 -- Command + Control + L で Linear を起動またはフォーカス
 launchOrFocus({ "cmd", "ctrl" }, "p", "Linear")
 
