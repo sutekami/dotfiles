@@ -5,3 +5,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 # pnpm end
+
+export PATH="$PATH":"$HOME/.pub-cache/bin"
