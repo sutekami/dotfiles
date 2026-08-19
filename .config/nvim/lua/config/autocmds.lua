@@ -13,3 +13,10 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.indentkeys:remove(".")
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "dart",
+  callback = function(args)
+    vim.b[args.buf].autoformat = false
+  end,
+})
