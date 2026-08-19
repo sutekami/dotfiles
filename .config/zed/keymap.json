@@ -1,0 +1,101 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore",
+      "ctrl-y": "editor::ShowCompletions"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      "shift-h": "pane::ActivatePreviousItem",
+      "shift-l": "pane::ActivateNextItem",
+      "space b p": "pane::TogglePinTab",
+      "space b P": "pane::CloseAllItems",
+      "space b d": "pane::CloseActiveItem",
+      "space f b": "tab_switcher::Toggle",
+      "space f f": "file_finder::Toggle",
+      "space f F": "file_finder::Toggle",
+      "space f n": "workspace::NewFile",
+      "shift-k": "editor::Hover",
+      "space E": "project_panel::ToggleFocus",
+      "space s r": "pane::DeploySearch",
+      "] h": "editor::GoToHunk",
+      "[ h": "editor::GoToPreviousHunk"
+    },
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "shift-z": "project_panel::CollapseAllEntries",
+      "l": "project_panel::OpenPermanent",
+      "a": "project_panel::NewFile",
+      "A": "project_panel::NewDirectory",
+      "d": "project_panel::Delete",
+      "r": "project_panel::Rename",
+      "y y": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      "space E": "project_panel::ToggleFocus",
+      "space s r": "pane::DeploySearch"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "shift-h": "vim::WindowTop",
+      "shift-l": "vim::WindowBottom"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-/": "workspace::ToggleBottomDock",
+      "ctrl-p s": "projects::OpenRecent",
+    },
+    "unbind": {
+      "cmd-j": "workspace::ToggleBottomDock",
+      "ctrl-r": "projects::OpenRecent",
+      "cmd-shift-e": "project_panel::ToggleFocus",
+      "cmd-shift-f": "pane::DeploySearch"
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "unbind": {
+      "cmd-shift-e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "cmd-shift-f": "pane::DeploySearch"
+    }
+  },
+  {
+    "context": "!Editor && !Terminal",
+    "bindings": {
+      "space f f": "file_finder::Toggle",
+      "space f F": "file_finder::Toggle",
+    },
+    "unbind": {
+      "space f": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "g shift-a": "editor::FindAllReferences"
+    },
+    "bindings": {
+      "g r": "editor::FindAllReferences"
+    }
+  }
+]
