@@ -60,6 +60,6 @@
     "dark": "Tokyo Night",
   },
   "file_finder": {
-    "modal_max_width": "medium"
+    "modal_max_width": "large"
   }
 }
