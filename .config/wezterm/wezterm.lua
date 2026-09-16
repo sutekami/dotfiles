@@ -161,10 +161,27 @@ config.cursor_blink_rate = 500
 wezterm.on("update-right-status", function(window, pane)
 	local workspace = wezterm.mux.get_active_workspace()
 
+	local is_zoomed = false
+
+	local tab = window:active_tab()
+	if tab then
+		for _, pane_info in ipairs(tab:panes_with_info()) do
+			if pane_info.is_active then
+				is_zoomed = pane_info.is_zoomed
+				break
+			end
+		end
+	end
+
+	local zoom_status = ""
+	if is_zoomed then
+		zoom_status = " 󰊓 ZOOM "
+	end
+
 	window:set_right_status(wezterm.format({
 		{ Background = { Color = "#3c3c3c" } },
 		{ Foreground = { Color = "#ffffff" } },
-		{ Text = " 󱂬 " .. workspace .. " " },
+		{ Text = zoom_status .. " 󱂬 " .. workspace .. " " },
 	}))
 end)
 
