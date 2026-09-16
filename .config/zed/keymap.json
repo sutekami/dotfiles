@@ -24,6 +24,8 @@
     "bindings": {
       "shift-h": "pane::ActivatePreviousItem",
       "shift-l": "pane::ActivateNextItem",
+      "space b shift-l": ["workspace::MoveItemToPaneInDirection", { "direction": "right"} ],
+      "space b shift-h": ["workspace::MoveItemToPaneInDirection", { "direction": "left" } ],
       "space b p": "pane::TogglePinTab",
       "space b P": "pane::CloseAllItems",
       "space b d": "pane::CloseActiveItem",
@@ -50,7 +52,8 @@
       "y y": "project_panel::Copy",
       "p": "project_panel::Paste",
       "space E": "project_panel::ToggleFocus",
-      "space s r": "pane::DeploySearch"
+      "space s r": "pane::DeploySearch",
+      "space f n": "workspace::NewFile",
     }
   },
   {
