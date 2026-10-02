@@ -33,7 +33,7 @@ launchOrFocus({ "cmd", "ctrl" }, "s", "Slack")
 
 -- Command + Control + E で Zed を起動またはフォーカス
 -- 2026/07/10 Zed にしてみる
--- launchOrFocus({ "cmd", "ctrl" }, "e", "Zed")
+launchOrFocus({ "cmd", "ctrl" }, "e", "Zed")
 
 launchOrFocus({ "cmd", "ctrl" }, "i", "Xcode")
 
