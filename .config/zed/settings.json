@@ -10,8 +10,6 @@
   "tab_size": 2,
   "server_url": "https://zed.dev",
   "proxy": "",
-  "markdown_preview_code_font_family": "Hack Nerd Font",
-  "markdown_preview_font_family": "Hiragino Sans",
   "buffer_line_height": "comfortable",
   "buffer_font_family": "Hack Nerd Font",
   "outline_panel": {
@@ -29,7 +27,7 @@
     "dock": "left"
   },
   "ui_font_weight": 400.0,
-  "ui_font_family": ".ZedMono",
+  "ui_font_family": "Hack Nerd Font",
   "project_panel": {
     "hide_gitignore": false,
     "default_width": 350.0,
@@ -55,9 +53,9 @@
   "ui_font_size": 14.0,
   "buffer_font_size": 14.0,
   "theme": {
-    "mode": "light",
+    "mode": "dark",
     "light": "Tokyo Night Storm",
-    "dark": "Tokyo Night",
+    "dark": "Catppuccin Frappé",
   },
   "file_finder": {
     "modal_max_width": "large"
