@@ -15,7 +15,9 @@ function launchOrFocus(keyBindTable, alphabetKey, appName)
 end
 
 -- Command + Control + T で WezTerm を起動またはフォーカス
-launchOrFocus({ "cmd", "ctrl" }, "t", "WezTerm")
+-- launchOrFocus({ "cmd", "ctrl" }, "t", "WezTerm")
+
+launchOrFocus({ "cmd", "ctrl" }, "t", "Ghostty")
 
 -- Command + Control + C で Chrome を起動またはフォーカス
 launchOrFocus({ "cmd", "ctrl" }, "c", "Google Chrome")
