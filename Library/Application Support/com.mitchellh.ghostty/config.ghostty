@@ -65,3 +65,17 @@ background-blur = "macos-glass-regular"
 # window size
 window-width = 156
 window-height = 50
+
+# keybind
+
+keybind = ctrl+p>s=toggle_command_palette
+
+keybind = ctrl+p>l=goto_split:right
+keybind = ctrl+p>h=goto_split:left
+keybind = ctrl+p>j=goto_split:down
+keybind = ctrl+p>k=goto_split:up
+
+keybind = ctrl+p>shift+l=new_split:right
+keybind = ctrl+p>shift+h=new_split:left
+keybind = ctrl+p>shift+j=new_split:down
+keybind = ctrl+p>shift+k=new_split:up
